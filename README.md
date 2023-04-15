@@ -36,3 +36,29 @@ Você aprenderá como criar excelentes gráficos, tabelas e outras visualizaçõ
 - [Trabalhar com Visuais](https://learn.microsoft.com/pt-br/training/modules/visuals-power-bi/)
 - [Dicionário de Gráficos](https://datavizcatalogue.com/)
 - [Guia de Referência](https://www.sqlbi.com/ref/power-bi-visuals-reference/)
+### 💪 Linguagem 𝐃𝐀𝐗 
+
+Aprenderá sintaxe, contexto de cálculos e funções poderosas que te darão o verdadeiro controle!
+
+- [Fundamentos](https://support.microsoft.com/pt-br/office/in%C3%ADcio-r%C3%A1pido-aprenda-os-fundamentos-de-dax-em-30-minutos-51744643-c2a5-436a-bdf6-c895762bec1a)
+- [Introdução](https://learn.microsoft.com/pt-br/dax/dax-overview)
+- [Dicionário](https://learn.microsoft.com/pt-br/dax/)
+- [Guia de Referência](https://dax.guide/)
+
+### ⛏️ Transformação e tratamento de dados
+
+Aprenda Power Query, a poderosa ferramenta de captura, limpeza e transformação do seus dados
+
+- [Introdução e Interface](https://learn.microsoft.com/pt-br/power-query/power-query-ui)
+- [Treinamento Oficial](https://learn.microsoft.com/pt-br/training/paths/get-transform-data-power-bi/)
+- [Guia de Referência](https://learn.microsoft.com/pt-br/powerquery-m/)
+
+### 🎁 Recursos e ferramentas úteis
+
+- [Galeria da comunidade](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery)
+- [Criar Temas 1](https://themes.powerbi.tips/themes/palette) | [Criar Temas 2](https://powerbithemegenerator.com/)
+- [Layouts Templates](https://powerbi.tips/tools/layouts/)
+- [Modelos Power BI](https://learn.microsoft.com/pt-br/power-bi/create-reports/sample-datasets)
+- [SQLBI Tools (Bravo; DAX Studio; Tabular Editor)](https://www.sqlbi.com/tools/)
+- [Excute e treine DAX online](https://dax.do/)
+- [DAX Formatter](https://www.daxformatter.com/)
