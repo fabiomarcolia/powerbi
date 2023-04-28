@@ -1,0 +1,48 @@
+let
+    // Colocar o ano que iniciará o preenchimento das datas
+    AnoInicial = 2022,
+    // Coloque a data final ou será sempre até a data atual
+    AnoFinal = Date.Year(DateTime.LocalNow()),
+    //Variável com a data inicial
+    DataInicial = Date.StartOfYear(#date(AnoInicial, 1, 1)),
+    //Variável com a data final
+    DataFinal = Date.EndOfYear(#date(AnoFinal, 12, 31)),
+    //QTD de dias entre as datas
+    QTDDias = Duration.Days(DataFinal-DataInicial)+1,
+    //Listar o intervalo das datas
+    Datalist = List.Dates(DataInicial,QTDDias,#duration(1,0,0,0)),
+    //Criar tabela
+    ConvertTabela = Table.FromList(Datalist, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    //Alterar Tipo da Coluna
+    AlteraTipo = Table.TransformColumnTypes(ConvertTabela,{{"Column1", type date}}),
+    //Renomear a Coluna
+    RenomeiaColuna = Table.RenameColumns(AlteraTipo,{"Column1", "Data"}),
+ 
+    //Novas colunas herdadas
+    //ANO
+    Ano = Table.AddColumn(RenomeiaColuna, "Ano", each Date.Year([Data]),Int64.Type),
+    //Mês
+    Mes = Table.AddColumn(Ano, "Mes", each Date.Month([Data]),Int64.Type),
+    //Nome do Mês
+    NomeMes = Table.AddColumn(Mes, "NomeMes", each Date.MonthName([Data]), type text),
+    //Dia
+    DiadoMes = Table.AddColumn(NomeMes, "DiaMes", each Date.Day([Data]), Int64.Type),
+    //Dia do Ano
+    DiadoAno = Table.AddColumn(DiadoMes, "DiaAno", each Date.DayOfYear([Data]), Int64.Type),
+    //Dia da Semana
+    DiaSemana = Table.AddColumn(DiadoAno, "DiaSemana", each Date.DayOfWeek([Data]), Int64.Type),
+    //Dia da Semana
+    NomeDiaSemana = Table.AddColumn(DiaSemana, "NomeDiaSemana", each Date.DayOfWeekName([Data]), type text),
+    //Dia da Semana
+    Trimestre = Table.AddColumn(NomeDiaSemana, "Trimestre", each Date.QuarterOfYear([Data]), Int64.Type),
+    //Semana do Ano
+    SemanaAno = Table.AddColumn(Trimestre, "SemanaAno", each Date.WeekOfYear([Data]), Int64.Type),
+    //Semana do Mes
+    SemanaMes = Table.AddColumn(SemanaAno, "SemanaMes", each Date.WeekOfMonth([Data]), Int64.Type),
+    //Ano mês
+    AnoMes = Table.AddColumn(SemanaMes, "AnoMes", each [Ano]*100+[Mes]),
+    //Ano Trimestre
+    AnoTrimestre = Table.AddColumn(AnoMes, "AnoTrimestre", each [Ano]*100+[Trimestre])
+
+in
+    AnoTrimestre
