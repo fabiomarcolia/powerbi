@@ -34,3 +34,5 @@
 Ao combinar o poder do Python e do Power BI, você pode elevar sua análise de dados a novos patamares. A importação de dados usando Python abre um mundo de possibilidades, permitindo obter insights mais profundos, automatizar processos e aproveitar técnicas analíticas avançadas.
 
 Você pode confir o guia completo no Linkedin
+
+- [Baixar o arquivo PBI com exemplo de importação e gráficos](https://github.com/marsolia/powerbi/blob/main/powerbi-com-python/powerbi-com-python---importar-dados-criar-grafico.pbix)
