@@ -46,6 +46,10 @@ SUMMARIZE(Clientes,
   Clientes[Nome],Clientes[Sobrenome],
   Total, SUM('Clientes'[Total])
 
-Cheet Sheet:
+### Cheet Sheet:
 
 <img width="588" alt="image" src="https://github.com/marsolia/powerbi/assets/13143559/13d2a4f1-cad7-4fcd-a76d-5e52bccbcd36">
+
+### Modelo Usado nas Análises Comparativas
+<img width="588" alt="image" src="https://github.com/marsolia/powerbi/assets/13143559/64a9f92b-1aa2-4cb7-a681-3ce672bfe1e6">
+
