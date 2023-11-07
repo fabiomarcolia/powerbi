@@ -1,21 +1,33 @@
-SQL vs DAX: Retornando Clientes que nunca compraram
+Problema:
+Retornar Clientes que nunca compraram
 
 Tabelas onde estão as informações:
 𝗰𝗹𝗶𝗲𝗻𝘁𝗲𝘀 <-> 𝘃𝗲𝗻𝗱𝗮𝘀: relacionadas pelo codigo do cliente
 
+Solução:
 Na prática, é só localizar clientes que não existem na tabela vendas:
 
 𝗦𝗤𝗟:
 -LEFT JOIN que retornará todos os dados de 𝗰𝗹𝗶𝗲𝗻𝘁𝗲𝘀
 -WHERE com IS NULL para filtrar o que não tem em 𝘃𝗲𝗻𝗱𝗮𝘀
 
+    SELECT * FROM Clientes a
+    LEFT JOIN VENDAS b on a.cod_cliente = b.cod_cliente
+    WHERE b.cod_cliente IS NULL        "
+__________________________________________________________________
 𝗗𝗔𝗫:
 -ALL que garante todos dados de ambas as tabelas sejam considerados
 -EXCEPT, filtra apenas o que tem na primeira tabela(LEFT)
 
-Códigos
+       ClientesSemCompras = EXCEPT(   
+                                ALL(clientes[cod_cliente]),
+                                ALL(vendas[cod_cliente])
+                                   )
 
--SQL:
+
+Exemplo Online para praticar:
+
+SQL: 
 
 
 
