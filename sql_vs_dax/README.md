@@ -5,7 +5,21 @@
 
 ### Se você já conhece SQL, pode usar para facilitar a aprendizagem
 
-Veja esses comparativos podem ajudar:
+### Desafios para treinar online:
+- [Clientes sem Compras](../sql_vs_dax/clientes_sem_compras.txt) 
+- [Retornando Clientes com mais de 5 Compras](../sql_vs_dax/clientes_com_mais_de_5_compras.txt)
+
+### Cheet Sheet:
+
+<img width="588" alt="image" src="https://github.com/marsolia/powerbi/assets/13143559/13d2a4f1-cad7-4fcd-a76d-5e52bccbcd36">
+
+### Modelo Usado nos desafios
+<img width="588" alt="image" src="https://github.com/marsolia/powerbi/assets/13143559/64a9f92b-1aa2-4cb7-a681-3ce672bfe1e6">
+
+
+
+### Comparativas entre SQL vs DAX para ajudar no entendimento:
+
 
 𝗦𝗲𝗹𝗲𝗰𝗶𝗼𝗻𝗮𝗿 𝗗𝗮𝗱𝗼𝘀:
 - SQL
@@ -46,15 +60,4 @@ SUMMARIZE(Clientes,
   Clientes[Nome],Clientes[Sobrenome],
   Total, SUM('Clientes'[Total])
 
-### Desafios para treinar online:
-- [Clientes sem Compras](../sql_vs_dax/clientes_sem_compras.txt) 
-- [Retornando Clientes com mais de 5 Compras](../sql_vs_dax/clientes_com_mais_de_5_compras.txt) 
-
-
-### Cheet Sheet:
-
-<img width="588" alt="image" src="https://github.com/marsolia/powerbi/assets/13143559/13d2a4f1-cad7-4fcd-a76d-5e52bccbcd36">
-
-### Modelo Usado nas Análises Comparativas
-<img width="588" alt="image" src="https://github.com/marsolia/powerbi/assets/13143559/64a9f92b-1aa2-4cb7-a681-3ce672bfe1e6">
 
