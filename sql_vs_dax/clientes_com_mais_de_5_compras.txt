@@ -1,1 +1,59 @@
 
+Problema:
+Retornar Clientes com mais de 5 Compras
+
+Tabelas onde estão as informações:
+𝗰𝗹𝗶𝗲𝗻𝘁𝗲𝘀 <-> 𝘃𝗲𝗻𝗱𝗮𝘀: relacionadas pelo codigo do cliente
+
+Solução:
+Na prática, é localizar os clientes com mais de 5 registros na Tabela Vendas:
+
+𝗦𝗤𝗟:
+-INNER JOIN retornará todos clientes com Compras
+-GROUP BY para agrupar a QTD de Compras por Clientes
+-HAVING: para filtrar a função COUNT > 5
+-ORDER BY DESC para ordenar do maior para menor
+
+    SELECT a.NomeCliente, COUNT(*) as QTDCompras 
+    FROM Clientes a
+    INNER JOIN Vendas b 
+    	ON a.cod_cliente = b.cod_cliente
+    GROUP BY a.NomeCliente
+    HAVING COUNT(*) > 5
+    ORDER BY QTDCompras DESC        "
+__________________________________________________________________
+𝗗𝗔𝗫:
+-SUMMARIZE: Usada para agrupar dados da tabela Clientes
+-ADDCOLUMNS: Cria as colunas necessárias na tabela criada pela acima
+-CALCULATE: Muda o contexto de cálculo para a tabela Vendas. 
+-COUNTROWS: Conta o número de linhas na tabela Vendas, que, devido ao CALCULATE, é efetivamente o número de vendas para cada cliente.
+-FILTER: Usado para filtra a tabela temporária cujo valores é maior que 5
+
+       Clientes com mais de 5 Compras =
+                                  FILTER (
+                                      ADDCOLUMNS (
+                                          SUMMARIZE (
+                                              Clientes,
+                                              Clientes[NomeCliente]
+                                          ),
+                                          "QTDCompras", CALCULATE (COUNTROWS (Vendas))
+                                      ),
+                                      [QTDCompras] > 5
+                                  )
+
+𝗘𝘅𝗲𝗺𝗽𝗹𝗼 𝗢𝗻𝗹𝗶𝗻𝗲 𝗽𝗮𝗿𝗮 𝗽𝗿𝗮𝘁𝗶𝗰𝗮𝗿:
+𝗦𝗤𝗟: Execute a query abaixo em: 
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_editor 
+
+SELECT a.CustomerName NomeCliente, COUNT(*) as QTDCompras 
+FROM Customers a
+INNER JOIN Orders b 
+	ON a.customerid = b.customerid
+GROUP BY a.CustomerName
+HAVING COUNT(*) > 5
+ORDER BY QTDCompras DESC 
+
+𝗗𝗔𝗫: Workspace pronto em: 
+https://dax.do/tDKWWk0X1Y4Rwf/
+
+OBS: as tabelas estão em inglês, mas a lógica é a mesma.
