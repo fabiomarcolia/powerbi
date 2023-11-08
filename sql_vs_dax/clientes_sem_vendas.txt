@@ -25,12 +25,14 @@ __________________________________________________________________
                                    )
 
 𝗘𝘅𝗲𝗺𝗽𝗹𝗼 𝗢𝗻𝗹𝗶𝗻𝗲 𝗽𝗮𝗿𝗮 𝗽𝗿𝗮𝘁𝗶𝗰𝗮𝗿:
-𝗦𝗤𝗟: Execute a query abaixo em https://www.w3schools.com/sql/trysql.asp?filename=trysql_editor 
+𝗦𝗤𝗟: Execute a query abaixo em: 
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_editor 
 
 SELECT a.* FROM Customers a
     LEFT JOIN Orders b on a.customerid = b.customerid
     WHERE b.customerid IS NULL 
 
-𝗗𝗔𝗫: Execute a query abaixo em https://dax.do/tDKWWk0X1Y4Rwf/ 
+𝗗𝗔𝗫: Workspace pronto em: 
+https://dax.do/tDKWWk0X1Y4Rwf/ 
 
 OBS: as tabelas estão em inglês, mas a lógica é a mesma.
