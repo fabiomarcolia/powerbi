@@ -47,7 +47,7 @@ SUMMARIZE(Clientes,
   Total, SUM('Clientes'[Total])
 
 ### Desafios para treinar online:
-- [Clientes sem Vendas](../sql_vs_dax/clientes_sem_compras.txt) 
+- [Clientes sem Compras](../sql_vs_dax/clientes_sem_compras.txt) 
 - [Retornando Clientes com mais de 5 Compras](../sql_vs_dax/clientes_com_mais_de_5_compras.txt) 
 
 
