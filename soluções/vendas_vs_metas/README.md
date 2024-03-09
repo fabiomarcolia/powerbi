@@ -1,9 +1,9 @@
 
 # Modelo de Soluções para aprendizado em Power BI
 
-Este repositório contém modelos de dados no Power BI com o objetivo de compartilhar com a comunidade conhecimento e contribuir com a aprendizagem de criação de Soluções de Business Intelligence para Tomada de Decisão.
+Este modelo de dados no Power BI é exemplo projetado para analisar dados de vendas e metas dos vendedores. O modelo integra detalhes do produto, transações de vendas, informações do vendedor e dados temporais para fornecer um ambiente rico para análise e relatórios de vendas.
 
-## Modelos Disponíveis
+## Estrutura do Modelo
 
 - `dProduto`: Contém informações sobre os produtos.
 - `dCalendario`: Uma tabela de dimensão de tempo para análise temporal.
