@@ -1,13 +1,11 @@
 
-# Guia de Aprendizado do Modelo de Vendas e Metas no Power BI
+# Modelo de Soluções para aprendizado em Power BI
 
-Este repositório contém um modelo de dados no Power BI projetado para analisar dados de vendas e metas dos vendedores. O modelo integra detalhes do produto, transações de vendas, informações do vendedor e dados temporais para fornecer um ambiente rico para análise e relatórios de vendas.
+Este repositório contém modelos de dados no Power BI com o objetivo de compartilhar com a comunidade conhecimento e contribuir com a aprendizagem de criação de Soluções de Business Intelligence para Tomada de Decisão.
 
-## Estrutura do Modelo
+## Modelos Disponíveis
 
-O modelo consiste nas seguintes tabelas:
-
-- `dProduto`: Contém informações sobre os produtos.
+- `Vendas vs Metas`: Contém informações sobre os produtos.
 - `dCalendario`: Uma tabela de dimensão de tempo para análise temporal.
 - `dVendedor`: Detalha informações sobre os vendedores.
 - `fVendas`: Tabela fato que registra as vendas transacionais.
