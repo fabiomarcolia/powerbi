@@ -5,7 +5,7 @@ Este repositório contém modelos de dados no Power BI com o objetivo de compart
 
 ## Modelos Disponíveis
 
-- `Vendas vs Metas`: Contém informações sobre os produtos.
+- `dProduto`: Contém informações sobre os produtos.
 - `dCalendario`: Uma tabela de dimensão de tempo para análise temporal.
 - `dVendedor`: Detalha informações sobre os vendedores.
 - `fVendas`: Tabela fato que registra as vendas transacionais.
