@@ -19,7 +19,7 @@ As tabelas estão relacionadas da seguinte maneira:
 - `dCalendario` ↔ `fVendas`: As vendas são registradas com uma data específica.
 - `dVendedor` ↔ `fVendas` e `dVendedor` ↔ `fMeta`: Um vendedor pode ter várias vendas e várias metas.
 
-## Sugestões de Melhorias no Modelo
+## Dicas Extras
 
 - Certifique-se de que as relações estejam corretamente definidas para a granularidade dos dados.
 - Considere adicionar uma tabela de dimensão para clientes, se relevante.
