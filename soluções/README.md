@@ -5,7 +5,7 @@ Este repositório contém um modelo de dados no Power BI projetado para analisar
 
 ## Modelos Disponíveis
 
-- [`Vendas vs Metas`](soluções/vendas_vs_metas): Modelo de acompanhamento de Performance de Vendas e Acompanhamento das Metas
+- [`Vendas vs Metas`](/vendas_vs_metas): Modelo de acompanhamento de Performance de Vendas e Acompanhamento das Metas
 - `DRE`: Modelo de relatório financeiro de Demonstrativo de Resultados
 - `People Analytics`: Dashboard de RH e movimentação de pessoas/colaboradores
 
