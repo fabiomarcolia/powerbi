@@ -26,10 +26,103 @@ As tabelas estão relacionadas da seguinte maneira:
 - Inclua categorias de produtos e regiões de vendedores para análises mais detalhadas.
 - Mantenha a integridade do modelo, verificando e limpando dados duplicados ou inconsistentes.
 
-## Métricas e KPIs Sugeridos
+## Métricas do Modelo
 
-Utilize as seguintes métricas DAX para análises:
+PS: YoY(Year-over-Year) Significa variação anual de uma métrica
 
-- `Total de Vendas`:
+- `Faturamento`:
   ```dax
-  Total de Vendas = SUMX(fVendas, fVendas[Quantidade] * fVendas[PrecoUnitario])
+  Faturamento = SUMX(fVendas, fVendas[QtdItens] * fVendas[PrecoUnitario])
+  
+- `% Faturamento YoY`:
+  ```dax
+  % Faturamento YoY = 
+  VAR varFaturamentoLY = 
+  CALCULATE(
+    [Faturamento],
+    SAMEPERIODLASTYEAR(dCalendario[Data])
+  )
+  RETURN
+  IF(
+    ISBLANK(DIVIDE([Faturamento] - varFaturamentoLY, varFaturamentoLY)),
+    "-",
+    DIVIDE([Faturamento] - varFaturamentoLY, varFaturamentoLY)
+  )
+
+- `% Margem YoY`:
+  ```dax
+  % Margem YoY = 
+  VAR varMargemLY = 
+  CALCULATE(
+    [Margem Bruta],
+    SAMEPERIODLASTYEAR(dCalendario[Data])
+  )
+  RETURN
+  IF(
+    ISBLANK(DIVIDE([Margem Bruta] - varMargemLY, varMargemLY)),
+    "-",
+    DIVIDE([Margem Bruta] - varMargemLY, varMargemLY)
+  )
+
+- `% Notas Emitidas YoY`:
+  ```dax
+  % Notas Emitidas YoY = 
+  VAR varQtdVendidaLY = 
+  CALCULATE(
+    [Notas Emitidas],
+    SAMEPERIODLASTYEAR(dCalendario[Data])
+  )
+  VAR vVar = DIVIDE([Notas Emitidas] - varQtdVendidaLY, varQtdVendidaLY)
+  RETURN
+  IF(
+    ISBLANK(vVar),
+    "-",
+    vVar
+  )
+  
+- `Custos`:
+  ```dax
+     Custos = 
+     SUMX(
+      fVendas, 
+      fVendas[QtdItens] * RELATED(dProduto[CustoUnitario])
+         )
+
+- `Margem Bruta`:
+  ```dax
+     Margem Bruta = [Faturamento]-[Custos]
+
+- `QTD de Notas Emitidas`:
+  ```dax
+     Notas Emitidas = DISTINCTCOUNT(fVendas[NFe]
+
+- `Ticket Médio`:
+  ```dax
+     Ticket Médio = DIVIDE([Faturamento],[Notas Emitidas])
+
+- `Meta de Faturamento`:
+  ```dax
+     % Meta Faturamento = 
+		DIVIDE(
+			[Faturamento], 
+			SUM(fMeta[Meta Faturamento])
+		)
+
+- `% Meta Margem`:
+  ```dax
+     % Meta Margem = 
+		DIVIDE(
+		[Margem Bruta], 
+		SUM(fMeta[Meta Margem Bruta]))
+
+- `% Meta Notas Emitidas`:
+  ```dax
+     % Meta Notas Emitidas = 
+		DIVIDE(
+		[Notas Emitidas], 
+		SUM(fMeta[Meta Notas Emitidas]))
+
+- `Rank de Vendedores`:
+  ```dax
+	 Rank Vendedor = 
+	 RANKX( ALL(dVendedor),[Medida Switch])
