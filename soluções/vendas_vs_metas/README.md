@@ -20,8 +20,7 @@ As tabelas estão relacionadas da seguinte maneira:
 - `dVendedor` ↔ `fVendas` e `dVendedor` ↔ `fMeta`: Um vendedor pode ter várias vendas e várias metas.
 
  ## Diagrama do Modelo 
- vendas_vs_metas
-/Diagrama_Dados.png
+![App Screenshot](Diagrama_Dados.png)
 
 ## Dicas Extras
 
