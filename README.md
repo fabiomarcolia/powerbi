@@ -13,9 +13,10 @@ Assim, eu acredito que independente da área de atuação, aprender usar essa fe
 
 ## 🚀 Trilha de Aprendizagem
 
-Essa trilha completa pode ser seguida para se tornar um especialista, porém, pode ser referência apenas algum tópico específico
+Essas trilha completa pode ser seguida para se tornar um especialista, porém, pode ser referência apenas algum tópico específico
 
 -  [Roteiros Oficiais da Microsoft](https://learn.microsoft.com/pt-br/training/browse/?products=power-bi)
+-  [Trilha Analista de Dados Power BI](https://learn.microsoft.com/pt-br/training/powerplatform/power-bi)
 
 
 
@@ -40,6 +41,7 @@ Você aprenderá como criar excelentes gráficos, tabelas e outras visualizaçõ
 
 Aprenderá sintaxe, contexto de cálculos e funções poderosas que te darão o verdadeiro controle!
 
+- [Trilha Completa - Usar DAX no Power BI](https://learn.microsoft.com/pt-br/training/paths/dax-power-bi/)
 - [Fundamentos](https://support.microsoft.com/pt-br/office/in%C3%ADcio-r%C3%A1pido-aprenda-os-fundamentos-de-dax-em-30-minutos-51744643-c2a5-436a-bdf6-c895762bec1a)
 - [Introdução](https://learn.microsoft.com/pt-br/dax/dax-overview)
 - [Dicionário](https://learn.microsoft.com/pt-br/dax/)
