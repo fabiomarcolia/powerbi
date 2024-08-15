@@ -66,5 +66,5 @@ Aprenda Power Query, a poderosa ferramenta de captura, limpeza e transformação
 - [DAX Formatter](https://www.daxformatter.com/)
 
 ## 🚀 Mais Recursos:
-- [Analytica: Dados, IA e Carreira](https://mentordados.substack.com): Dicas e Atualizações semanal com mais recursos.
+- [Analytica: Dados, IA e Carreira](https://mentordados.substack.com): Recursos e Dicas com Atualizações semanal.
  
