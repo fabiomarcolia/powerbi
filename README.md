@@ -65,6 +65,6 @@ Aprenda Power Query, a poderosa ferramenta de captura, limpeza e transformação
 - [Excute e treine DAX online](https://dax.do/)
 - [DAX Formatter](https://www.daxformatter.com/)
 
-## Mais Recursos:
+## 🚀 Mais Recursos:
 - [Analytica: Dados, IA e Carreira](https://mentordados.substack.com): Dicas e Atualizações semanal com mais recursos.
  
