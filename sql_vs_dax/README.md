@@ -60,4 +60,12 @@ SUMMARIZE(Clientes,
   Clientes[Nome],Clientes[Sobrenome],
   Total, SUM('Clientes'[Total])
 
+### ➡️ Comandos SQL com o equivalente DAX
+<img width="588" alt="image" src="https://media.licdn.com/dms/image/D4D22AQF3WTXSmk8kiw/feedshare-shrink_800/0/1712834023894?e=1726704000&v=beta&t=Isu4G3R-QUohHdxT0ccWb7KyV01kVn0E-jUN8OH_dOk">
+
+
+  
+
+  
+
 
