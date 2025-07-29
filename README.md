@@ -17,6 +17,7 @@ Essas trilha completa pode ser seguida para se tornar um especialista, porém, p
 
 -  [Roteiros Oficiais da Microsoft](https://learn.microsoft.com/pt-br/training/browse/?products=power-bi)
 -  [Trilha Analista de Dados Power BI](https://learn.microsoft.com/pt-br/training/powerplatform/power-bi)
+-  [Roadmap Completo](https://topmate.io/fabiomarcolia/1483482)
 
 
 
