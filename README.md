@@ -67,7 +67,7 @@ Aprenda Power Query, a poderosa ferramenta de captura, limpeza e transformação
 
 ---
 
-### 🔗 Fale Comigo
+### 🔗 Fique a vontade de falar comigo no Linkedin
 
 [![Linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=black)](https://www.linkedin.com/in/fabiomarcolia/)
 
