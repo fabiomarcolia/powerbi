@@ -73,6 +73,14 @@ Aprenda Power Query, a poderosa ferramenta de captura, limpeza e transformação
 [![Linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=black)](https://www.linkedin.com/in/fabiomarcolia/)
 
 
-### Autor
+## Autor - Fabio Marçolia | Carreira em Dados & IA
 
-- [Fabio Marçolia](https://github.com/fabiomarcolia)
+Para mais conteúdo Carreira em Dados e IA, ou se quiser falar comigo sobre dúvidas, sugestões ou feedback:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fabio_Marçolia-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fabiomarcolia)
+- Mais Recursos de Carreira: [Veja aqui](https://topmate.io/fabiomarcolia)
+
+Agradeço seu apoio e fique a vontade de entrar em contato comigo!
+
+
+**Se este repositório foi útil para você, considere deixar uma ⭐**
